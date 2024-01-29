@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>遲到千年</title>
+    <style type="text/css" media="screen">
+      body {
+        background-color: #f1f1f1;
+        font-family: sans-serif;
+      }
+
+      span {
+        transition: opacity 0.5s ease;
+      }
+
+      .container {
+        margin: 70px auto 35px auto;
+        width: 280px;
+      }
+
+      p {
+        color: rgba(0, 0, 0, 0.5);
+        line-height: 1.75;
+        padding: 7px;
+        font-size: 14px;
+      }
+
+      img {
+        vertical-align: text-bottom;
+      }
+
+      .logo {
+        display: inline-block;
+        padding-top: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        卮言<span id="spring">春</span>天　破碎鞦韆
+        <br />
+        踟躕不如停止抱歉
+        <br />
+        再過<span id="autumn">秋</span>天　爛了蜿蜒
+        <br />
+        紅燈你擱淺
+      </p>
+      <p>
+        只是你<span id="year">遲到一千年</span>
+        <br />
+        黃昏後就不會有夜
+        <br />
+        髮間在印象中被蔓延
+        <br />
+        你說你放棄了<span id="month">八</span>月
+        <br />
+        其實不需要蜻蜓點水
+        <br />
+        打昏自己食髓知味
+        <br />
+        吞了你用力<span id="second">一</span>口下嚥
+        <br />
+        捧起碗再倥侗增添
+      </p>
+      <p>
+        闔起厭倦　壓壞了肩
+        <br />
+        縮成了點還是一條線
+        <br />
+        接近直覺　溺死詭譎
+        <br />
+        最熟最爛你的臉
+      </p>
+      <p>
+        <a href="/" class="logo">
+          <img
+            width="32"
+            height="25"
+            title=""
+            alt=""
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAyCAYAAADsg90UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOlSURBVHgB7ZpRUhNBEIb/ngWrLMoqbmA8geQxJKvZE+gNhBOoJyDcAE9guIGcgJSbNY/hBuIJTBWCSrLTdkeklALc2Z1ZsZLvgaWS2WH7n5l/enqhdJgxBPlxTMAEoAkZHFlrPxFHR3HcGuA/ZTwer5+dTRs5n3eNMQ+Z0WDmDf1OYm3Mr78EuB0aMPH+qjGDVqt1jDvMaDRqTPP8OcE8A9sNEK3f1r6gAH/cMhfjSbvdxx1BR/rk9HRrHjS463JvCQEubpQlw2T6Kwb7/2pWaOBfzr69hM1f/W2kb6K0AJcdXAgRt1u7qAkfgf+isgCXHYkQlrAbemmk6ahLZN/yhYlVxZsAlx0S+tPz89dJkkzgkZ/r/OsOgV/BIwaeka1ma3X13ljdGJ7Ismzj9PRs7Dt4xbsAik7PWW7Hw9HoBSqifVjLh76m/FUoTdOuJAdiJNG6TN+GSPJYImjIdxvwAZleWYNMs2xHnqUHD2iiZwgDtvgks/R4/mhkNfm7nkNZc9HJSRfGPCemZ+Jy5d22hAiVg2doRvvO5vlB/uDBIGk2r/UkKtrf+yzbMkw7DG6gDA4iVAteEjXYg3xtrX9T0H+0hiNVhGDQ6yedzb3b2qQfPsj+zntwhEDHzPl2HMcDt/tKIt7Rk1HdgStskpsOWOr2ljGGC6wHOPtGAu+hBKUFUA5lq1vN1aGLzwZNmKLIJFfTZ90289w6ub2O+jSiJKmQilfaBvUPT6ffm/Ik74re83OL5LdXP9fPXIJny/vTtfvNpOI5pNIM+B3XJfG7Hzive8ZuHLd78IA3ARRHESYrkWnqL7NZPi58qPEYvOJVAEVE2BMRXhZpq+cGvWr6XKS9BC9m1/aaDnsXQEmHw0Ppuguv0CDubCbwTJCzwCyKttWh4QntaxbRNgIQRAB1Zk1K4AlLvJsEqjoFEUDRjEzyg31URH0iZJElmABKHkU9zEvt5ZkaE7TUFlSA+bRl+wYl0dFPAhdcgwqgzGYzTXBKzYLQo68EF0Brg+IFB3CkjtFXggugEHMfjrA1lQ20CEESoeuQ6vNnuRRKd3Xf73Q2H6EGapkBcxjFR5R4gJqoTQDJ94+KtrVEzp5RFno/zD6iJqjoeZ95wkReX6zcxAo5FCFqQ47GhApVaAfq84A7ylIALDhLAbDgLAXAgrOiZWbUBdHTAv/FdSTPVF8miBpJ00zeG+DW9wZEpt9pt4IUQK9j6QFYcJYCYMFZCoAFZykAFpwftFKcH7uQ+SMAAAAASUVORK5CYII="
+          />
+        </a>
+      </p>
+    </div>
+    <script>
+      var n = 1;
+
+      function arabicToChinese(number) {
+        const chineseNumerals = [
+          "零",
+          "一",
+          "二",
+          "三",
+          "四",
+          "五",
+          "六",
+          "七",
+          "八",
+          "九",
+        ];
+        const unitDigits = ["", "十", "百", "千", "萬"];
+
+        if (isNaN(number) || number < 0 || number > 9999999999999999) {
+          return "";
+        }
+
+        if (number === 2) {
+          return "兩";
+        }
+
+        const numStr = String(number);
+        const len = numStr.length;
+        let chineseStr = "";
+
+        for (let i = 0; i < len; i++) {
+          const digit = parseInt(numStr[i]);
+          const unitIndex = len - i - 1;
+
+          if (len === 2 && i === 0 && digit === 1) {
+            chineseStr += unitDigits[unitIndex % 4];
+          } else if (digit !== 0) {
+            chineseStr += chineseNumerals[digit] + unitDigits[unitIndex % 4];
+          } else if (i !== len - 1 && digit === 0) {
+            chineseStr += chineseNumerals[digit];
+          }
+        }
+
+        return chineseStr;
+      }
+
+      function changeTextById(id, text) {
+        var e = document.getElementById(id);
+        if (n === 1) {
+          e.innerText = text;
+        } else if (e.innerText !== text) {
+          e.style.opacity = "0";
+          setTimeout(() => {
+            e.innerText = text;
+            e.style.opacity = "1";
+          }, 500);
+        }
+      }
+
+      function main() {
+        const targetYear = 1006;
+        const targetDate = new Date(targetYear, 9, 18);
+        const currentDate = new Date();
+        const year = currentDate.getFullYear();
+        const month = currentDate.getMonth();
+        const day = currentDate.getDate();
+
+        document.title = `遲到${
+          Date(targetYear, month, day) <= targetDate
+            ? arabicToChinese(year - targetYear)
+            : arabicToChinese(year - targetYear - 1)
+        }年`;
+
+        changeTextById("year", document.title);
+        changeTextById("month", arabicToChinese(month + 1));
+
+        if (2 <= month && month < 5) {
+          changeTextById("spring", "春");
+          changeTextById("autumn", "秋");
+        } else if (5 <= month && month < 8) {
+          changeTextById("spring", "夏");
+          changeTextById("autumn", "冬");
+        } else if (8 <= month && month < 11) {
+          changeTextById("spring", "秋");
+          changeTextById("autumn", "春");
+        } else {
+          changeTextById("spring", "冬");
+          changeTextById("autumn", "夏");
+        }
+
+        changeTextById("second", arabicToChinese(n));
+        n++;
+      }
+
+      main();
+      setInterval(main, 2000);
+    </script>
+  </body>
+</html>
