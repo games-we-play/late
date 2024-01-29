@@ -50,7 +50,7 @@
       <p>
         只是你<span id="year">遲到一千年</span>
         <br />
-        黃昏後就不會有夜
+        <span id="dusk">黃昏</span>後就不會有夜
         <br />
         髮間在印象中被蔓延
         <br />
@@ -151,6 +151,7 @@
         const year = currentDate.getFullYear();
         const month = currentDate.getMonth();
         const day = currentDate.getDate();
+        const hour = currentDate.getHours();
 
         document.title = `遲到${
           Date(targetYear, month, day) <= targetDate
@@ -175,12 +176,22 @@
           changeTextById("autumn", "夏");
         }
 
+        if (0 <= hour && hour < 6) {
+          changeTextById("dusk", "黎明");
+        } else if (6 <= hour && hour < 12) {
+          changeTextById("dusk", "正午");
+        } else if (12 <= hour && hour < 18) {
+          changeTextById("dusk", "黃昏");
+        } else {
+          changeTextById("dusk", "午夜");
+        }
+
         changeTextById("second", arabicToChinese(n));
         n++;
       }
 
       main();
-      setInterval(main, 2000);
+      setInterval(main, 5000);
     </script>
   </body>
 </html>
